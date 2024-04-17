@@ -34,19 +34,6 @@ In this task, you will create a banking API with the basic `CRUD` operations.
 4. If it does exist, replace the values of the account with the new values coming from the `req`.
 5. Send a response with the correct status code.
 
-### Refactor your code.
-1. create a folder named `api`, inside it create a folder named `accounts` and inside it create 2 files: `accounts.routes.js` and `accounts.controllers.js`.
-2. Initialize your mini express app in `accounts.routes.js`.
-3. Export your router.
-4. Move all your routes from `app.js` to `accounts.routes.js` and replace all `app` to `router`.
-5. In your `app.js` import your new routes file.
-6. Use your new routes with `app.use`.
-7. Add `/accounts` as a first argument for `app.use` and remove `/accounts` from `accounts.routes.js`.
-8. Moving to the controllers file, create a function called `accountsGet` that takes `req` and `res` and sends the `accounts` as a resposne and export it.
-9. Import the `accounts.js` data file in your controllers file
-10. In your router file import the new function we just created.
-11. Replace the callback function with the function we just imported.
-12. Do the same for the other routes.
 
 
 ## Bonus
